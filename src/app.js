@@ -7,6 +7,7 @@ const cors=require('cors');
 const app=express();
 
 app.use(cors());
+const port=process.env.PORT || 3000;
 
 //define paths for express config
 const publicDirPath=path.join(__dirname,'../public');
@@ -87,6 +88,6 @@ app.get('*',(req,res)=>
     name:'Andrew mead '
   })
 })
-app.listen(3000,()=>{
-    console.log('server listening on port 3000')
+app.listen(port,()=>{
+    console.log('server listening on port ',port)
 })
