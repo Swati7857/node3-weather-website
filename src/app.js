@@ -57,7 +57,7 @@ app.get('/weather',(req,res)=>
   {
       if(error)
       {
-        console.log('geocode  :'+error); 
+        console.log('geocode  ::'+error); 
         return res.send({error})
       }
   
@@ -80,7 +80,7 @@ app.get('/weather',(req,res)=>
 })
 app.get('*',(req,res)=>
 {
-  //  res.send('<h2>weater forecast</h2>')
+  
   res.render('404',{
     errortext:'Page not found',
     title:'About me',
@@ -88,5 +88,5 @@ app.get('*',(req,res)=>
   })
 })
 app.listen(3000,()=>{
-    console.log('server listening on 3000')
+    console.log('server listening on port 3000')
 })
