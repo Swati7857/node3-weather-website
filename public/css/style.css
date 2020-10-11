@@ -1,0 +1,18 @@
+body
+{
+    color:darkslategray;
+    font-family:'Lucida Sans';
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+footer
+{
+  
+    color:grey;
+    border-top: 1px solid #eeeeee;
+    margin-top: 16px;
+      padding: 16px 0;
+
+}
