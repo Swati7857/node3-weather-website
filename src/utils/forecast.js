@@ -27,8 +27,9 @@ const forecast=(longitude,lattitude,callback)=>
       }
       else
       {
+        
         callback(undefined,'we are in '+body.location.name+' and current temp is '+body.current.temperature+' but it feels like '+body.current.feelslike+
-                '. There are '+body.current.precip+" % chances of rain."
+                '. There are '+body.current.precip+' % chances of rain. the cloudover is  '+body.current.cloudcover +'  and pressure is   '+body.current.pressure
               );
     }    
   })
